@@ -1,3 +1,4 @@
+// slider
 function carouselSlider(){
     var currentIndex = $(this).index();
     var slideValue = currentIndex * 100;

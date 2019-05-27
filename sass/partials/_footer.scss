@@ -72,17 +72,17 @@ footer{
           .location_and_info{
                 display: inline-block;
                 font-size: 0;
-                @media screen and (max-width: 825px){
+                @media screen and (max-width: 835px){
                     display: block;
                 }
                 ul{
                     margin-right: 24px;
                     display: inline-block;
                     vertical-align: top;
-                    @media screen and (max-width: 825px){
+                    @media screen and (max-width: 835px){
                         text-align: center;
                     }
-                    @media screen and (max-width: 825px){
+                    @media screen and (max-width: 835px){
                         width: 100%;
                         text-align: center;
                         margin-bottom: 35px;
@@ -101,7 +101,7 @@ footer{
                             font-size: 16px;
                             font-weight: 500;
                             margin-bottom: 49px;
-                            @media screen and (max-width: 825px){
+                            @media screen and (max-width: 835px){
                                margin-bottom: 25px;
                             }
                             @media screen and (max-width: 450px){
@@ -131,7 +131,7 @@ footer{
             .about{
                 float: right;
                 margin-top: 12px;
-                @media screen and (max-width:825px){
+                @media screen and (max-width:835px){
                     float: none;
                     text-align: center;
                 }
@@ -153,7 +153,7 @@ footer{
                     line-height: 1.5;
                     letter-spacing: 1.1px;
                     margin-bottom: 20px;
-                    @media screen and (max-width:825px){
+                    @media screen and (max-width:835px){
                        margin: 0 auto;
                        margin-bottom: 15px;
                     }

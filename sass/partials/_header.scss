@@ -71,12 +71,11 @@ header{
             margin-right: 31px;
             margin-top: 20px;
             @media screen and (max-width: 1100px){
-                margin: 20px 25px 0 25px;
+                margin: 20px 25px;
                 background-size: 150px;
                 width: 150px;
             }
             @media screen and (max-width: 1000px){
-                margin-bottom: 20px;
                 margin-left: 0;
             }
         }
@@ -96,7 +95,7 @@ header{
         border-left: 1px solid $lightgrey;
         text-align: left;
         @media screen and (max-width: 1210px){
-            padding: 30px 0  33px  32px;
+            padding: 30px 0  33px  10px;
         }
         @media screen and (max-width: 1060px){
           display: none;
@@ -154,6 +153,7 @@ header{
             }
             &.homepage{
                 width: 160px;
+                text-align: center;
                 &:after{
                     content: "\f078";
                     font-family: "Font Awesome 5 Free" !important;
@@ -180,6 +180,7 @@ header{
     }
     & >div{
         float: right;
+        font-size: 0;
         @media screen and (max-width: 1060px){
             display: none;
           }
