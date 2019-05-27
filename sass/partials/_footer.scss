@@ -1,0 +1,245 @@
+footer{
+    background-color: $lightblack;
+    .links{
+        border-bottom: 1px solid $mildblack;
+        @media screen and(max-width: 750px){
+           border: none;
+        }
+        .layout{
+            text-align: left;
+            @media screen and(max-width: 750px){
+                text-align: center;
+            }
+            .logo{
+                @include background('../../app/images/logo','png',100%, 100%, no-repeat);
+                width: 181px;
+                height: 41px;
+                display: inline-block;
+                margin: 31px 0;
+            }
+            .social_media{
+                float: right;
+                font-size: 0;
+                @media screen and(max-width: 750px){
+                   float: none;
+                }
+                a{
+                    display: inline-block;
+                    text-decoration: none;
+                    color: $white;
+                    font-size: 26px;
+                    padding: 40px 43px ;
+                    border-left: 1px solid $mildblack;
+                    @include transition(color 0.3s linear);
+                    @media screen and(max-width: 750px){
+                       padding: 20px 23px;
+                       font-size: 18px;
+                       border-top: 1px solid $mildblack;
+                       border-bottom: 1px solid $mildblack;
+                    }
+                    &.fb{
+                        &:hover{
+                            color: $blue;
+                        }
+                    }
+                    &.insta{
+                        &:hover{
+                            color: $pink;
+                        }
+                    }
+                    &.tweet{
+                        &:hover{
+                            color: $skyblue;
+                        }
+                    }
+                    &.pin{
+                        border-right: 1px solid $mildblack;
+                        &:hover{
+                            color: $red;
+                        }
+                    }
+                }
+            }
+        }   
+    }
+    .info{
+        border-bottom: 1px solid $mildblack;
+        padding:  90px 107px;
+        @media screen and (max-width: 1000px){
+            padding: 50px 70px;
+        }
+        .layout{
+          .location_and_info{
+                display: inline-block;
+                font-size: 0;
+                @media screen and (max-width: 825px){
+                    display: block;
+                }
+                ul{
+                    margin-right: 24px;
+                    display: inline-block;
+                    vertical-align: top;
+                    @media screen and (max-width: 825px){
+                        text-align: center;
+                    }
+                    @media screen and (max-width: 825px){
+                        width: 100%;
+                        text-align: center;
+                        margin-bottom: 35px;
+                    }
+                    li{
+                        margin-bottom: 22px;
+                        @media screen and (max-width: 450px){
+                            font-size: 14px;
+                        }
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        h5{
+                            color: $white;
+                            opacity: 0.7; 
+                            font-size: 16px;
+                            font-weight: 500;
+                            margin-bottom: 49px;
+                            @media screen and (max-width: 825px){
+                               margin-bottom: 25px;
+                            }
+                            @media screen and (max-width: 450px){
+                                font-size: 12px;
+                            }
+                        }
+                        a{
+                            font-size: 16px;
+                            display: inline-block;
+                            text-decoration: none;
+                            color: $white;
+                            opacity: 0.5;
+                            @include transition(color 0.3s linear);
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                            &:hover{
+                                color: $orange;
+                            }
+                            @media screen and (max-width: 450px){
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            .about{
+                float: right;
+                margin-top: 12px;
+                @media screen and (max-width:825px){
+                    float: none;
+                    text-align: center;
+                }
+                h5{
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $white;
+                    opacity: 0.7; 
+                    margin-bottom: 36px;
+                    @media screen and (max-width: 450px){
+                        font-size: 14px;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    color: $white;
+                    opacity: 0.5;
+                    max-width: 374px;
+                    line-height: 1.5;
+                    letter-spacing: 1.1px;
+                    margin-bottom: 20px;
+                    @media screen and (max-width:825px){
+                       margin: 0 auto;
+                       margin-bottom: 15px;
+                    }
+                    @media screen and (max-width: 450px){
+                        font-size: 12px;
+                    }
+                    span{
+                        font-weight: 500;
+                    }
+                }
+                a{
+                    font-size: 16px;
+                    text-decoration: none; 
+                    color: $white;
+                    opacity: 0.5;
+                    margin-bottom: 5px;
+                    display: inline-block;
+                    line-height: 1.5;
+                    letter-spacing: 1.1px;
+                    @include transition(color 0.3s linear);
+                    @media screen and (max-width: 450px){
+                        font-size: 12px;
+                    }
+                    &:hover{
+                        color: $orange;
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    span{
+                        margin-right: 9px;
+                        &.call{
+                            transform: rotate(105deg);
+                        }
+                    }
+                    
+                }
+            }
+           
+        }
+    }
+    .privacy_policy{
+        padding: 62px 0;
+        letter-spacing: 1px;
+        font-size: 14px;
+        line-height: 1.5;
+        @media screen and (max-width: 450px){
+            font-size: 12px;
+            padding: 30px 0;
+        }
+        div{
+            @media screen and (max-width:1000px){
+                text-align: center;
+            }
+            p{
+                letter-spacing: 1px;
+                color: $white;
+                opacity: 0.5;
+                display: inline-block;
+                span{
+                    font-weight: 500;
+                }
+            }
+            div{
+                float: right;
+                @media screen and (max-width:1000px){
+                    float: none;
+                    margin-top: 15px;
+                }
+                a{
+                    color: $white;
+                    opacity: 0.5;
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: bold;
+                    display: inline-block;
+                    margin-right: 10px;
+                    @include transition(color 0.3s linear);
+                    @media screen and (max-width: 450px){
+                        font-size: 12px;
+                    }
+                    &:hover{
+                        color: $orange;
+                    }
+                }
+            }
+        } 
+    }
+}

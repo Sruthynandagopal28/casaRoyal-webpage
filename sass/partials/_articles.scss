@@ -1,0 +1,95 @@
+.articles{
+    background-color: $mildgrey;
+    text-align: center;
+    .layout{
+        padding: 121px 0;
+        @media screen and (max-width: 450px){
+            padding: 80px 0;
+        }
+        ul{
+            margin: 123px 0 127px;
+            font-size: 0;
+            @media screen and (max-width: 450px){
+                margin: 50px 0;
+            }
+            li{
+                display: inline-block;
+                width: calc((100% / 3) - 56px);
+                margin-right: 28px;
+                background-color: $white;
+                text-align: left;
+                &:last-child{
+                    margin-right: 0; 
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+
+                }
+                @media screen and (max-width: 1000px){
+                    width: calc((100% / 2) - 56px);
+                    margin-right: 28px;
+                    margin-bottom: 30px;
+                }
+                @media screen and(max-width: 750px){
+                    width: 100%;
+                    margin-right: 0;
+                }
+            }
+        }
+        button{
+            width: 324px;
+            height: 58px;
+            @media screen and(max-width: 750px){
+                width: 200px;
+                font-size: 12px;
+            }
+        }
+        div{
+            padding: 34px 34px 30px;
+            @media screen and (max-width: 450px){
+                padding: 25px ;
+            }
+            .category{
+                background-color: $violet;
+                display: inline-block;
+                padding: 4px 13px;
+                margin: 0 0 16px;
+                font-size: 13px;
+                color: $white;
+                @include border-radius(3px);
+                @media screen and (max-width: 450px){
+                    font-size: 10px;
+                }
+            }
+            h4{
+                padding-bottom: 68px;
+                border-bottom: 1px solid $greyish;
+                font-size: 28px;
+                font-weight: 500;
+                color: $darkblack;
+                cursor: pointer;
+                @media screen and (max-width: 450px){
+                    padding: 0 0 30px;
+                    font-size: 16px;
+                }
+            }
+            p{
+                margin: 30px 0 0;
+                font-size: 14px;
+                font-weight: 500;
+                @media screen and (max-width: 450px){
+                    margin: 15px 0 0;
+                    font-size: 12px;
+                }
+                span{
+                    background-color: transparent;
+                    padding:0;
+                    color: $orange;
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+}

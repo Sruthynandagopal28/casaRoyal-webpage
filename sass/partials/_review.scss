@@ -1,0 +1,104 @@
+.review{
+    @include background('../../app/images/testimonials-bg-1','png', 0 , 0, no-repeat);
+    background-size: cover;
+    .layout{
+        position: relative;
+        padding: 158px 0 190px;
+        overflow: hidden;
+        width: 100%;
+        @media screen and(max-width: 750px){
+            padding: 80px 0 100px;
+        }
+        @media screen and (max-width: 450px){
+            padding: 60px 0 80px;
+        }
+        h5{
+            text-align: left;
+            color: $white;
+        }
+        h2{
+            text-align: left;
+            color: $white;
+        }
+        .pagination_keys{
+            position: absolute;
+            right: 0;
+            bottom: 203px;
+            @media screen and(max-width: 750px){
+                bottom: 106px;
+            }
+            @media screen and (max-width: 450px){
+                bottom :93px;
+            }
+            span{
+                @media screen and(max-width: 750px){
+                    padding: 10px 14px;
+                }
+            }
+        }
+        .quotes{
+            display: flex;
+            flex-wrap: nowrap;
+            width: 100%;
+            @include transition(transform 0.3s linear);
+            .quotes_container{
+                flex-shrink: 0;
+                flex-basis: 100%;
+                display: inline-block;
+                &>p{
+                    color: $white;
+                    font-size: 30px;
+                    font-weight: 500;
+                    line-height: 1.6;
+                    margin: 108px 0 59px;
+                    @media screen and(max-width: 750px){
+                        margin: 40px 0 40px;
+                        font-size: 14px;
+                    }
+                }
+                .client_div{
+                    float: left;
+                    div{
+                        display: inline-block;
+                        margin-top: 25px;
+                        vertical-align: top;
+                        @media screen and(max-width: 750px){
+                            margin-top: 10px;
+                        }
+                        h6{
+                            font-size: 24px;
+                            font-weight: 500;
+                            color: $white;
+                            @media screen and(max-width: 750px){
+                                font-size: 14px;
+                            }
+                        }
+                        p{
+                            margin: 3px 0 0;
+                            font-size:15px;
+                            color: $lght;
+                            @media screen and(max-width: 750px){
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    img{
+                        margin-right: 30px;
+                        width: 90px; 
+                        height: 90px;
+                        @include border-radius(50%);
+                        object-fit: cover;
+                        @media screen and(max-width: 750px){
+                            width: 50px;
+                            height: 50px;
+                        }
+                        @media screen and (max-width: 450px){
+                           margin-right: 15px;
+                        }
+                    }
+                }
+            }
+        }
+       
+    }
+}
